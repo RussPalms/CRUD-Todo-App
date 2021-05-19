@@ -23,6 +23,8 @@ create a package.json
 
 install the necessary packages
     -> npm i -D webpack webpack-cli
+    <!-- babel-polyfill@6.13.0 -->
+    -> npm i -D babel-polyfill
     -> npm i -D babel-loader @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties
     <!-- 
         react@16.4.2 
@@ -33,3 +35,10 @@ install the necessary packages
     -> npm i redux-form
     -> npm i axios
     -> npm i lodash
+    -> npm install @material-ui@4.11.0
+
+    checking initial display
+        -> npm run dev
+        -> python manage.py runserver
+
+    

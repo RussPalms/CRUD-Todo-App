@@ -2,19 +2,25 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <!-- semantic-ui CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        {% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" /> {% endcomment %}
         <title>ToDoCRUD</title>
+        {% load static %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+        <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}" />
     </head>
 
     <body>
-        <div id='app'>
-        {% load static %}
-        <script src="{% static 'frontend/main.js' %}" />
+        <div id="main">
+            <div id="app" />
         </div>
+        <script src="{% static 'frontend/public/main.js' %}" />
     </body>
 
 </html>

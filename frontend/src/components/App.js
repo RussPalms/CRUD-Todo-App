@@ -4,11 +4,13 @@ import ReactDOM from 'react-dom';
 class App extends Component {
     render() {
         return (
-            <div>
+            <div className='center'>
                 <h1>ToDoCRUD</h1>
             </div>
         );
     }
-}
+};
 
-ReactDOM.render(<App />, document.querySelector('#app'));
+// export default App;
+
+ReactDOM.render(<App />, document.querySelector("app"));

@@ -11,10 +11,16 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# frontend_dir = os.path.join(BASE_DIR, 'frontend')
+# TEMPLATE_DIR = os.path.join(frontend_dir, 'templates')
+# static_dir = os.path.join(frontend_dir, 'static')
+# # static_frontend_dir = os.path.join(static_dir, 'frontend'))
+# STATICFILES_DIRS = (os.path.join(static_dir, 'frontend'),)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -46,7 +52,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny'
     ],
-    'DATETIME-FORMAT': "%m/%d/%Y %H:%M:%S",
+    'DATETIME_FORMAT': "%m/%d/%Y %H:%M:%S",
 }
 
 MIDDLEWARE = [
